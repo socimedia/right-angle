@@ -1,0 +1,69 @@
+.productions {
+    background-color: $lightPurple;
+
+    .container {
+        .content {
+            padding-bottom: 0;
+
+            h2 {
+                margin-bottom: 80px;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+            }
+
+            .production-tiles {
+                display: grid;
+                grid-template-columns: repeat(4, auto);
+                grid-gap: 0;
+
+                .production-tile {
+                    width: 100%;
+                    padding-bottom: 56%;
+                    background-color: red;
+                    position: relative;
+                    background-size: cover;
+                    background-position: center;
+
+                    .production-tile-hover {
+                        background-color: $brightPurple;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        opacity: 0;
+                        transition: all 250ms;
+
+                        h2 {
+                            padding: 2rem;
+                            margin-bottom: 0;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .prod-agt {
+                    background-image: url('/media/img/productions/agt.jpg');
+                }
+
+                .prod-bnhm {
+                    background-image: url('/media/img/productions/bnhm.jpg');
+                }
+
+                .prod-brat-pack {
+                    background-image: url('/media/img/productions/bratPack.jpg');
+                }
+
+                .prod-cat-and-nat {
+                    background-image: url('/media/img/productions/catAndNat.jpg');
+                }
+
+                .production-tile:hover .production-tile-hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

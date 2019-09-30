@@ -1,0 +1,34 @@
+header {
+    background-color: $darkPurple;
+    border-bottom: 2px solid $lightPurple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+
+    .logo {
+        width: 250px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        nav {
+            ul {
+                color: white;
+                list-style: none;
+
+                li {
+                    display: inline-block;
+                    margin-right: 42px;
+                }
+            }
+        }
+    }
+}

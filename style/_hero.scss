@@ -1,0 +1,46 @@
+.hero {
+    background-image: $gradient;
+
+    .container {
+        .content {
+            .hero-head {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .hero-head-logo {
+                    width: 320px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .hero-head-copy {
+                    flex: 1;
+                    padding-left: 80px;
+
+                    p {
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+
+            .partners {
+                h2 {
+                    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+                }
+
+                .partners-slider {
+                    .slide {
+                        width: 10%;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

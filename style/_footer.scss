@@ -1,0 +1,48 @@
+footer {
+    .footer-top {
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-top: 175px;
+        padding-bottom: 60px;
+        background-image: $gradient;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            width: 377px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .address {
+            h2 {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    .footer-bottom {
+        background-color: black;
+        padding: 0.5rem 50px;
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            margin-bottom: 0;
+        }
+
+        .facebook {
+            width: 36px;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
