@@ -67,3 +67,26 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .productions {
+        .container {
+            .content {
+                h2 {
+                    margin-bottom: 40px;
+                }
+
+                .production-tiles {
+                    grid-template-columns: repeat(2, auto);
+
+                    h2 {
+                        font-size: 14px;
+                        line-height: 16px;
+                        letter-spacing: 3px;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -5,6 +5,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 32px;
+    position: relative;
 
     .logo {
         width: 250px;
@@ -27,8 +28,154 @@ header {
                 li {
                     display: inline-block;
                     margin-right: 42px;
+                    position: relative;
                 }
             }
+        }
+
+        .wire-bird {
+            width: 85px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+
+    .hamburger {
+        display: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 4;
+        left: 6px;
+        width: 26px;
+        height: 22px;
+        border: 0;
+
+        .ham-bar {
+            width: 100%;
+            height: 4px;
+            border-radius: 1px;
+            background-color: white;
+            position: absolute;
+            opacity: 1;
+            transition: transform 250ms;
+        }
+
+        .ham-top {
+            top: 0;
+        }
+
+        .ham-mid {
+            top: 50%;
+            transform: translateY(-50%) rotate(0);
+        }
+
+        .ham-bot {
+            bottom: 0;
+        }
+
+        .d-none {
+            opacity: 0;
+        }
+
+        .x-bar-one {
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+        .x-bar-two {
+            transform: translateY(-50%) rotate(-45deg);
+        }
+    }
+}
+
+.mobile-word-mark {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    header {
+
+        padding: 1rem 1.5rem;
+
+        .logo {
+            display: none;
+        }
+
+        .menu {
+
+            .wire-bird {
+                width: 60px;
+                padding-top: 0.5rem;
+            }
+
+            nav {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-image: $gradient;
+                z-index: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: translateX(100%);
+                transition: all 250ms;
+
+                ul {
+                    li {
+                        display: block;
+                        margin-right: 0;
+
+                        a {
+                            font-size: 24px;
+                        }
+                    }
+
+                    li:not(last-child) {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+
+            nav.active {
+                transform: translateX(0);
+            }
+        }
+
+        .hamburger {
+            display: block;
+        }
+    }
+
+    .mobile-word-mark {
+        display: block;
+        padding: 0.75rem calc(5% + 6px);
+        background-color: $lightPurple;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    nav {
+        li:after {
+            content: '';
+            width: 0%;
+            height: 1px;
+            background-color: white;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            transition: all 250ms;
+        }
+
+        li:hover:after {
+            width: 100%;
         }
     }
 }

@@ -10,14 +10,18 @@ footer {
         align-items: center;
 
         .logo {
-            width: 377px;
+            flex: 1;
+            max-width: 100%;
 
             img {
-                width: 100%;
+                width: 377px;
+                max-width: 100%;
             }
         }
 
         .address {
+            padding-left: 80px;
+
             h2 {
                 margin-bottom: 0.5rem;
             }
@@ -42,6 +46,31 @@ footer {
             img {
                 display: block;
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    footer {
+        h2 {
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 3px;
+        }
+
+        .footer-top {
+            padding: 40px;
+            display: block;
+            text-align: center;
+
+            .logo {
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+
+            .address {
+                padding-left: 0;
             }
         }
     }

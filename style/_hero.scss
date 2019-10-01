@@ -44,3 +44,23 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .hero {
+        .container {
+            .content {
+                .hero-head {
+                    display: block;
+
+                    .hero-head-logo {
+                        display: none;
+                    }
+
+                    .hero-head-copy {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
