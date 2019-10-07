@@ -4,7 +4,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px;
+    padding: 24px;
     position: relative;
 
     .logo {
@@ -116,12 +116,12 @@ header {
                 bottom: 0;
                 left: 0;
                 right: 0;
-                background-image: $gradient;
+                background-image: $gradientDown;
                 z-index: 2;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                transform: translateX(100%);
+                transform: translateX(-100%);
                 transition: all 250ms;
 
                 ul {
@@ -152,11 +152,12 @@ header {
 
     .mobile-word-mark {
         display: block;
-        padding: 0.75rem calc(5% + 6px);
+        padding: 0.5rem calc(5% + 6px);
         background-color: $lightPurple;
+        text-align: center;
 
         img {
-            width: 100%;
+            width: 75%;
         }
     }
 }

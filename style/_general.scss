@@ -2,6 +2,14 @@ body {
     color: white;
 }
 
+body.landing-page {
+    background-color: $lightPurple;
+}
+
+body.production-page {
+    background-color: $gray;
+}
+
 .container {
     width: 1200px;
     max-width: 90%;
@@ -32,7 +40,19 @@ a.btn {
     font-size: 16px;
     letter-spacing: 5px;
     text-transform: uppercase;
+    border: 1px solid white;
+    transition: all 400ms;
 }
+
+@media screen and (min-width: 992px) {
+
+    a.btn:hover,
+    a.btn:focus {
+        background-color: transparent;
+        color: white;
+    }
+}
+
 
 @media screen and (max-width: 767px) {
     .container {
