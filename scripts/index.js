@@ -45,4 +45,8 @@ $(document).ready(function () {
         $('.ham-mid-two').removeClass('x-bar-two');
         $('.nav-open').removeClass('nav-open');
     });
+
+    // Initialize AOS
+    AOS.init();
+
 });
