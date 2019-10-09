@@ -47,6 +47,8 @@ $(document).ready(function () {
     });
 
     // Initialize AOS
-    AOS.init();
+    AOS.init({
+        offset: 0
+    });
 
 });
