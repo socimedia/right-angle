@@ -24,40 +24,139 @@
                     background-position: center;
 
                     .production-tile-hover {
-                        background-color: $brightPurple;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        opacity: 0;
-                        transition: all 250ms;
+                        display: none;
 
                         h2 {
                             padding: 2rem;
                             margin-bottom: 0;
                             text-align: center;
+                            border-bottom: 0;
                         }
                     }
+                }
+
+                .prod-tms {
+                    background-image: url('/media/img/productions/maskedSinger.jpg');
                 }
 
                 .prod-agt {
                     background-image: url('/media/img/productions/agt.jpg');
                 }
 
-                .prod-bnhm {
-                    background-image: url('/media/img/productions/bnhm.jpg');
+                .prod-dduad {
+                    background-image: url('/media/img/productions/disney.jpg');
                 }
 
-                .prod-brat-pack {
+                .prod-tpirl {
+                    background-image: url('/media/img/productions/priceIsRight.jpg');
+                }
+
+                .prod-fflce {
+                    background-image: url('/media/img/productions/ff.jpg');
+                }
+
+                .prod-jcst {
+                    background-image: url('/media/img/productions/jamesCharles.jpg');
+                }
+
+                .prod-mywt {
+                    background-image: url('/media/img/productions/views.jpg');
+                }
+
+                .prod-vtwdaj {
+                    background-image: url('/media/img/productions/markPlier.jpg');
+                }
+
+                .prod-rtm {
+                    background-image: url('/media/img/productions/rudolph.jpg');
+                }
+
+                .prod-canmt {
+                    background-image: url('/media/img/productions/catAndNat.jpg');
+                }
+
+                .prod-hmft {
+                    background-image: url('/media/img/productions/heather.jpg');
+                }
+
+                .prod-toamp {
+                    background-image: url('/media/img/productions/office.jpg');
+                }
+
+                .prod-sags {
+                    background-image: url('/media/img/productions/simonAndGarf.jpg');
+                }
+
+                .prod-ftmp {
+                    background-image: url('/media/img/productions/friends.jpg');
+                }
+
+                .prod-tboj {
+                    background-image: url('/media/img/productions/judy.jpg');
+                }
+
+                .prod-bnhm {
+                    background-image: url('/media/img/productions/BNHM.jpg');
+                }
+
+                .prod-eam {
+                    background-image: url('/media/img/productions/elvis.jpg');
+                }
+
+                .prod-ftrl {
                     background-image: url('/media/img/productions/bratPack.jpg');
                 }
 
-                .prod-cat-and-nat {
-                    background-image: url('/media/img/productions/catAndNat.jpg');
+                .prod-gotm {
+                    background-image: url('/media/img/productions/GoT.jpg');
+                }
+
+                .prod-gt {
+                    background-image: url('/media/img/productions/tuna.jpg');
+                }
+
+                .prod-gom {
+                    background-image: url('/media/img/productions/grumpy.jpg');
+                }
+
+                .prod-hll {
+                    background-image: url('/media/img/productions/heyLandyn.jpg');
+                }
+
+                .prod-la {
+                    background-image: url('/media/img/productions/love.jpg');
+                }
+
+                .prod-nl {
+                    background-image: url('/media/img/productions/nashville.jpg');
+                }
+
+                .prod-owsatc {
+                    background-image: url('/media/img/productions/SATC.jpg');
+                }
+
+                .prod-psts {
+                    background-image: url('/media/img/productions/postSecret.jpg');
+                }
+
+                .prod-pr {
+                    background-image: url('/media/img/productions/purpleReign.jpg');
+                }
+
+                .prod-r {
+                    background-image: url('/media/img/productions/raffi.jpg');
+                }
+
+                .prod-svmam {
+                    background-image: url('/media/img/productions/smokeAndMirrors.jpg');
+                }
+
+                .prod-tl {
+                    background-image: url('/media/img/productions/together.jpg');
+                }
+
+                .prod-ttnbc {
+                    background-image: url('/media/img/productions/twas.jpg');
                 }
 
                 .production-tile:hover .production-tile-hover {
@@ -84,6 +183,32 @@
                         line-height: 16px;
                         letter-spacing: 3px;
                         padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .productions {
+        .container {
+            .content {
+                .production-tiles {
+                    .production-tile {
+                        .production-tile-hover {
+                            background-color: $brightPurple;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            opacity: 0;
+                            transition: all 250ms;
+                        }
                     }
                 }
             }
