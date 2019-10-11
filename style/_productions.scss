@@ -17,11 +17,14 @@
 
                 .production-tile {
                     width: 100%;
-                    padding-bottom: 56%;
-                    background-color: red;
                     position: relative;
-                    background-size: cover;
-                    background-position: center;
+
+                    img {
+                        width: 100%;
+                        height: 258px;
+                        object-fit: cover;
+                        display: block;
+                    }
 
                     .production-tile-hover {
                         display: none;
@@ -33,130 +36,6 @@
                             border-bottom: 0;
                         }
                     }
-                }
-
-                .prod-tms {
-                    background-image: url('/media/img/productions/tiles/maskedSinger.jpg');
-                }
-
-                .prod-agt {
-                    background-image: url('/media/img/productions/tiles/agt.jpg');
-                }
-
-                .prod-dduad {
-                    background-image: url('/media/img/productions/tiles/disney.jpg');
-                }
-
-                .prod-tpirl {
-                    background-image: url('/media/img/productions/tiles/priceIsRight.jpg');
-                }
-
-                .prod-fflce {
-                    background-image: url('/media/img/productions/tiles/ff.jpg');
-                }
-
-                .prod-jcst {
-                    background-image: url('/media/img/productions/tiles/jamesCharles.jpg');
-                }
-
-                .prod-mywt {
-                    background-image: url('/media/img/productions/tiles/views.jpg');
-                }
-
-                .prod-vtwdaj {
-                    background-image: url('/media/img/productions/tiles/markPlier.jpg');
-                }
-
-                .prod-rtm {
-                    background-image: url('/media/img/productions/tiles/rudolph.jpg');
-                }
-
-                .prod-canmt {
-                    background-image: url('/media/img/productions/tiles/catAndNat.jpg');
-                }
-
-                .prod-hmft {
-                    background-image: url('/media/img/productions/tiles/heather.jpg');
-                }
-
-                .prod-toamp {
-                    background-image: url('/media/img/productions/tiles/office.jpg');
-                }
-
-                .prod-sags {
-                    background-image: url('/media/img/productions/tiles/simonAndGarf.jpg');
-                }
-
-                .prod-ftmp {
-                    background-image: url('/media/img/productions/tiles/friends.jpg');
-                }
-
-                .prod-tboj {
-                    background-image: url('/media/img/productions/tiles/judy.jpg');
-                }
-
-                .prod-bnhm {
-                    background-image: url('/media/img/productions/tiles/BNHM.jpg');
-                }
-
-                .prod-eam {
-                    background-image: url('/media/img/productions/tiles/elvis.jpg');
-                }
-
-                .prod-ftrl {
-                    background-image: url('/media/img/productions/tiles/bratPack.jpg');
-                }
-
-                .prod-gotm {
-                    background-image: url('/media/img/productions/tiles/GoT.jpg');
-                }
-
-                .prod-gt {
-                    background-image: url('/media/img/productions/tiles/tuna.jpg');
-                }
-
-                .prod-gom {
-                    background-image: url('/media/img/productions/tiles/grumpy.jpg');
-                }
-
-                .prod-hll {
-                    background-image: url('/media/img/productions/tiles/heyLandyn.jpg');
-                }
-
-                .prod-la {
-                    background-image: url('/media/img/productions/tiles/love.jpg');
-                }
-
-                .prod-nl {
-                    background-image: url('/media/img/productions/tiles/nashville.jpg');
-                }
-
-                .prod-owsatc {
-                    background-image: url('/media/img/productions/tiles/SATC.jpg');
-                }
-
-                .prod-psts {
-                    background-image: url('/media/img/productions/tiles/postSecret.jpg');
-                }
-
-                .prod-pr {
-                    background-image: url('/media/img/productions/tiles/purpleReign.jpg');
-                }
-
-                .prod-r {
-                    background-image: url('/media/img/productions/tiles/raffi.jpg');
-                }
-
-                .prod-svmam {
-                    background-image: url('/media/img/productions/tiles/smokeAndMirrors.jpg');
-                }
-
-                .prod-tl {
-                    background-image: url('/media/img/productions/tiles/together.jpg');
-                }
-
-                .prod-ttnbc {
-                    background-image: url('/media/img/productions/tiles/twas.jpg');
                 }
 
                 .production-tile:hover .production-tile-hover,
