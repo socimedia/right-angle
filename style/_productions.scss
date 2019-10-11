@@ -159,7 +159,8 @@
                     background-image: url('/media/img/productions/tiles/twas.jpg');
                 }
 
-                .production-tile:hover .production-tile-hover {
+                .production-tile:hover .production-tile-hover,
+                .production-tile:focus .production-tile-hover {
                     opacity: 1;
                 }
             }
