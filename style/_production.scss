@@ -4,7 +4,7 @@
     background-position: center;
 
     .container {
-        max-width: 960px;
+        width: 960px;
         min-height: 600px;
         display: flex;
         justify-content: center;
@@ -15,9 +15,21 @@
 
             img {
                 width: 90%;
+                display: block;
+                margin: 0 auto;
             }
         }
 
+    }
+}
+
+.production-hero.bottom-align {
+    .container {
+        align-items: flex-end;
+
+        .content {
+            padding-bottom: 0;
+        }
     }
 }
 
