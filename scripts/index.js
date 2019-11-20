@@ -3,8 +3,8 @@ $(document).ready(function () {
     // partners logo slider
     $('.partners-slider').slick({
         infinite: true,
-        slidesToShow: 10,
-        slidesToScroll: 10,
+        slidesToShow: 12,
+        slidesToScroll: 12,
         dots: false,
         arrows: false,
         responsive: [{
@@ -18,10 +18,10 @@ $(document).ready(function () {
         }, {
             breakpoint: 991,
             settings: {
-                slidesToShow: 5,
-                slidesToScroll: 5,
+                slidesToShow: 6,
+                slidesToScroll: 2,
                 autoplay: true,
-                autoplaySpeed: 5000
+                autoplaySpeed: 1500
             }
         }]
     });
