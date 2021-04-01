@@ -38,7 +38,7 @@ $(document).ready(function () {
         $('body').toggleClass('nav-open');
     });
 
-    $('.nav-menu ul li').on('click', function () {
+    $('nav ul li').on('click', function () {
         $('nav').removeClass('active');
         $('.ham-top, .ham-bot').removeClass('d-none');
         $('.ham-mid-one').removeClass('x-bar-one');
